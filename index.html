@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bùi Thị Huyền Linh - Digital Portfolio</title>
+  <meta name="description" content="Digital Portfolio học phần Nhập môn Công nghệ số &amp; AI - Bùi Thị Huyền Linh, MSV 25100028, Y khoa, Trường Đại học Y Dược – ĐHQGHN">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-logo">HL</div>
+      <h3>Huyền Linh · Portfolio</h3>
+    </div>
+    <nav class="nav-menu">
+      <a href="#intro"      class="nav-item active" id="nav-intro">🏠 Trang chủ</a>
+      <a href="#practices"  class="nav-item" id="nav-practices">📁 Các bài thực hành</a>
+      <a href="#reflection" class="nav-item" id="nav-reflection">📈 Học tập &amp; Phản tư</a>
+      <a href="#skills"     class="nav-item" id="nav-skills">💡 Bài học &amp; Kỹ năng</a>
+      <a href="#conclusion" class="nav-item" id="nav-conclusion">✨ Tổng kết</a>
+    </nav>
+  </header>
+
+  <!-- ==================== LAYOUT CONTAINER ==================== -->
+  <div class="layout-container">
+
+    <!-- ==================== LEFT COLUMN: PROFILE CARD ==================== -->
+    <aside class="profile-column">
+      <div class="profile-sticky-card">
+        <div class="avatar-container">
+          <img class="profile-avatar" src="assets/avatar.png" alt="Bùi Thị Huyền Linh Avatar">
+          <div class="avatar-particle-emitter"></div>
+        </div>
+        <h2>Bùi Thị Huyền Linh</h2>
+        <p class="student-id">MSV: 25100028</p>
+        <div class="badge-container">
+          <span class="profile-badge major-badge">Y khoa (General Medicine)</span>
+          <span class="profile-badge institution-badge">Trường Đại học Y Dược - ĐHQGHN</span>
+        </div>
+        
+        <div class="profile-card-footer">
+          <div class="profile-card-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">UMP-VNU · Y Khoa</span>
+          </div>
+          <div style="margin-top: 4px; font-weight: 500;">Học kỳ II · 2026</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ==================== RIGHT COLUMN: MAIN SECTIONS ==================== -->
+    <main class="content-column">
+
+      <!-- ==================== TAB 1: INTRO ==================== -->
+      <section class="section active" id="intro">
+        <div class="hero-card">
+          <div class="grid-lines"></div>
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Digital Portfolio · Nhập môn Công nghệ số &amp; AI · UMP-VNU</span>
+          </div>
+          <h1>Y Khoa Lâm Sàng &amp; Sự Chuyển Dịch Y Tế Số</h1>
+          
+          <div class="lead-bio">
+            <p>Chào mừng quý thầy cô và các bạn đã ghé thăm không gian số cá nhân của em - <strong>Bùi Thị Huyền Linh</strong>, sinh viên ngành <strong>Y khoa</strong> tại Trường Đại học Y Dược, Đại học Quốc gia Hà Nội!</p>
+            <p>Y học lâm sàng không chỉ gói gọn trong sách vở lý thuyết, những ca trực đêm căng thẳng hay việc thực hành trên lâm sàng, mà còn đòi hỏi khả năng làm chủ tri thức khoa học hiện đại và công nghệ y tế tiên tiến. Trong thời đại số hóa, dữ liệu y sinh, các hệ thống theo dõi sức khỏe từ xa (Telemedicine) cùng sự hỗ trợ của trí tuệ nhân tạo (AI) đang định hình lại phương thức tiếp cận chẩn đoán, cá nhân hóa điều trị và quản lý chăm sóc sức khỏe cộng đồng.</p>
+            <p>Digital Portfolio này là nơi ghi lại hành trình học tập, phản tư và phát triển năng lực số của em trong suốt học phần. Đây chính là minh chứng cho quá trình rèn luyện tư duy thực chứng khoa học, nâng cao kỹ năng viết prompt y sinh có đạo đức, cộng tác trực tuyến thông qua Trello/Drive và làm chủ các công nghệ số nhằm chuẩn bị hành trang vững vàng nhất của một bác sĩ tương lai.</p>
+          </div>
+
+          <div class="intro-grid">
+            <div class="intro-box">
+              <span class="box-icon">🩺</span>
+              <h4>Y khoa Thực chứng</h4>
+              <p>Tra cứu dữ liệu lâm sàng chất lượng cao trên PubMed, đánh giá độ tin cậy của y văn theo tiêu chí A-P-M-C-U phục vụ thực hành y học chứng cứ.</p>
+            </div>
+            <div class="intro-box">
+              <span class="box-icon">💻</span>
+              <h4>Hợp tác &amp; Quản trị Số</h4>
+              <p>Làm việc nhóm hiệu quả dựa trên mô hình Kanban (Trello), đồng bộ hóa luồng dữ liệu y khoa đám mây (Google Drive) và CapCut chỉnh sửa số.</p>
+            </div>
+            <div class="intro-box">
+              <span class="box-icon">🧠</span>
+              <h4>Kỹ nghệ Prompt Y sinh</h4>
+              <p>Ứng dụng kỹ nghệ prompt có cấu trúc (mô hình 3C) để khai thác kiến thức giải phẫu và sinh lý bệnh, triệt tiêu ảo giác thông tin từ mô hình ngôn ngữ lớn.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hồ sơ cá nhân & định hướng -->
+        <div class="about-me-container">
+          <div class="about-me-header">
+            <div class="header-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3>Hồ sơ học tập &amp; Định hướng phát triển</h3>
+            <div class="active-line"></div>
+          </div>
+          
+          <div class="learning-objective-box">
+            <h5>🎯 Mục tiêu học tập môn Nhập môn Công nghệ số &amp; AI</h5>
+            <p>Đối với một sinh viên khối ngành khoa học sức khỏe, học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo không chỉ đơn giản là việc sử dụng máy tính, mà là chiếc chìa khóa để khai thác nguồn tài nguyên tri thức y học khổng lồ toàn cầu. Em đặt mục tiêu làm chủ các công cụ hỗ trợ số, nâng cao khả năng quản trị tệp tin nghiên cứu, học cách tương tác có cấu trúc với AI để tóm tắt các cơ chế sinh lý bệnh phức tạp, và cam kết duy trì tuyệt đối liêm chính khoa học trong việc phân tách ranh giới giữa sự hỗ trợ của công nghệ với tư duy chẩn đoán độc lập của người thầy thuốc.</p>
+          </div>
+
+          <div class="about-me-grid">
+            <div class="about-me-card">
+              <div class="about-icon">📚</div>
+              <span class="card-tag tag-coral">Sở thích học thuật</span>
+              <h4>Giải phẫu &amp; Nội khoa</h4>
+              <p>Em thích tìm hiểu cấu trúc không gian ba chiều của hệ cơ xương khớp, nghiên cứu sinh lý bệnh tuần hoàn lâm sàng và cập nhật các tiến bộ trong công nghệ chẩn đoán hình ảnh từ xa.</p>
+            </div>
+            <div class="about-me-card">
+              <div class="about-icon">🛠️</div>
+              <span class="card-tag tag-sage">Kỹ năng số</span>
+              <h4>Prompt Y khoa &amp; Kanban</h4>
+              <p>Kỹ năng phân rã prompt chuyên ngành (mô hình 3C) để xây dựng bộ câu hỏi ôn tập lâm sàng, quản lý dự án y tế nhóm qua Trello và hậu kỳ âm thanh lọc nhiễu.</p>
+            </div>
+            <div class="about-me-card">
+              <div class="about-icon">🚀</div>
+              <span class="card-tag tag-emerald">Định hướng tương lai</span>
+              <h4>Bác sĩ Y học số năng động</h4>
+              <p>Em hướng tới hình ảnh một bác sĩ đa khoa có chuyên môn lâm sàng vững chắc, nhạy bén với công nghệ, biết áp dụng mô hình y tế từ xa (telemedicine) để chăm sóc người bệnh vùng sâu vùng xa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 2: PRACTICES ==================== -->
+      <section class="section" id="practices">
+        
+        <!-- BÀI 1 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>01</span>
+            <div>
+              <h2>Thực hành Bài 1: Quản lý Tệp tin &amp; Thư mục Hệ thống</h2>
+              <p>Tổ chức và quản lý dữ liệu học tập cá nhân hóa trên hệ điều hành Windows — kỹ năng số nền tảng để lưu trữ học liệu y khoa ngăn nắp.</p>
+            </div>
+          </div>
+          <div class="section-subtitle">
+            <span class="subtitle-icon">📝</span>
+            <h4>Quy trình 12 bước thực hành chuẩn</h4>
+          </div>
+          <div class="process-flow">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <p><strong>Khởi động File Explorer:</strong> Sử dụng tổ hợp phím tắt nhanh <code>Windows + E</code> để mở trình quản lý tệp tin.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <p><strong>Định vị ổ đĩa:</strong> Truy cập vào <code>This PC</code> từ danh mục bên trái, nhấp đúp vào ổ đĩa trống (ví dụ: ổ D: hoặc E:). Nếu chỉ có ổ C:, hãy sử dụng thư mục Documents.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <p><strong>Tạo thư mục làm việc:</strong> Chuột phải vào khoảng trống -> chọn <code>New &gt; Folder</code>. Đặt tên thư mục gốc là <code>ThucHanh_BuiThiHuyenLinh</code> và nhấn Enter.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">04</div>
+              <p><strong>Mở thư mục gốc:</strong> Nhấp đúp chuột để điều hướng vào bên trong thư mục vừa tạo.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">05</div>
+              <p><strong>Khởi tạo tệp tin:</strong> Nhấp chuột phải -> <code>New &gt; Text Document</code>. Đặt tên mặc định của tệp là <code>GhiChu.txt</code>.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">06</div>
+              <p><strong>Đổi tên tệp:</strong> Chọn tệp <code>GhiChu.txt</code>, nhấn chuột phải chọn <code>Rename</code> (hoặc phím F2). Đổi tên thành <code>GhiChuQuanTrong.txt</code>.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">07</div>
+              <p><strong>Tạo thư mục con:</strong> Nhấp chuột phải vào khoảng trống -> chọn <code>New &gt; Folder</code>. Đặt tên thư mục con là <code>TaiLieu</code>.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">08</div>
+              <p><strong>Thực hiện sao chép:</strong> Chuột phải vào tệp <code>GhiChuQuanTrong.txt</code> -> chọn <code>Copy</code> (Ctrl+C). Truy cập thư mục <code>TaiLieu</code>, chuột phải chọn <code>Paste</code> (Ctrl+V).</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">09</div>
+              <p><strong>Thực hiện di chuyển:</strong> Quay lại thư mục gốc, tạo tệp <code>DiChuyen.txt</code>. Chọn tệp, nhấn chuột phải -> <code>Cut</code> (Ctrl+X). Mở thư mục <code>TaiLieu</code> và chọn <code>Paste</code> (Ctrl+V).</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">10</div>
+              <p><strong>Xóa tạm thời:</strong> Trong thư mục <code>TaiLieu</code>, nhấp chuột phải vào tệp <code>GhiChuQuanTrong.txt</code> -> chọn <code>Delete</code> để đưa tệp vào Thùng rác (Recycle Bin).</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">11</div>
+              <p><strong>Xóa vĩnh viễn:</strong> Chọn tệp <code>DiChuyen.txt</code> trong thư mục <code>TaiLieu</code>, nhấn giữ tổ hợp phím <code>Shift + Delete</code>, chọn Yes để xác nhận xóa vĩnh viễn khỏi ổ cứng.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">12</div>
+              <p><strong>Khôi phục tệp:</strong> Nhấp đúp biểu tượng Recycle Bin ngoài màn hình Desktop. Tìm tệp <code>GhiChuQuanTrong.txt</code> đã xóa ở bước 10, chuột phải chọn <code>Restore</code>.</p>
+            </div>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">📂</span>
+            <h4>Cấu trúc cây thư mục sau khi thực hiện</h4>
+          </div>
+          <div class="terminal-box">
+            <div class="term-header">
+              <div class="term-dot red"></div>
+              <div class="term-dot yellow"></div>
+              <div class="term-dot green"></div>
+            </div>
+            <pre class="folder-tree">D:\
+└── ThucHanh_BuiThiHuyenLinh/
+    ├── GhiChuQuanTrong.txt (Tệp tin gốc sau khi khôi phục)
+    └── TaiLieu/
+        └── GhiChuQuanTrong.txt (Bản sao tệp tin)</pre>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Thao tác quản lý thư mục giúp em hiểu nguyên lý quản lý dữ liệu hình cây của hệ điều hành. Kỹ năng này cực kỳ quan trọng trong việc tổ chức bệnh án y khoa số, các tài liệu nghiên cứu chuyên ngành và nâng cao năng suất làm việc, ngăn ngừa tối đa nguy cơ thất thoát dữ liệu lâm sàng.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w1.pdf" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Xem Báo cáo Bài 1 (.pdf)
+          </a>
+        </article>
+
+        <!-- BÀI 2 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>02</span>
+            <div>
+              <h2>Thực hành Bài 2: Tìm kiếm &amp; Đánh giá Nguồn Thông tin Học thuật</h2>
+              <p>Khảo sát dữ liệu y văn thực chứng phục vụ nghiên cứu đề tài: "Hiệu quả của kỹ thuật Pomodoro trong việc giảm thiểu hội chứng Burnout ở sinh viên y khoa giai đoạn thi cử".</p>
+            </div>
+          </div>
+          
+          <div class="research-intro">
+            <h4>Tổng quan đề tài &amp; Cú pháp tìm kiếm y văn nâng cao</h4>
+            <p>Áp lực học tập nặng nề khiến sinh viên Y khoa là đối tượng có tỷ lệ kiệt sức (Burnout) rất cao. Để nghiên cứu một cách khoa học về hiệu quả của kỹ thuật quản lý thời gian Pomodoro đối với vấn đề này, em đã xây dựng cú pháp tìm kiếm nâng cao trên các cổng dữ liệu học thuật uy tín như PubMed và Google Scholar:</p>
+            <div class="query-block">
+              <strong>Cú pháp truy vấn nâng cao:</strong><br>
+              <code>("Pomodoro technique" OR "time management") AND ("burnout" OR "stress" OR "academic stress") AND "medical students"</code>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <caption><span class="caption-badge">Bảng tổng hợp</span> Phân tích và đánh giá độ tin cậy của 10 nguồn tài liệu học thuật theo tiêu chí A-P-M-C-U</caption>
+              <thead>
+                <tr>
+                  <th>Nguồn tài liệu / Tác giả</th>
+                  <th>Loại tài liệu</th>
+                  <th>Nơi xuất bản / Tạp chí</th>
+                  <th>Phương pháp nghiên cứu</th>
+                  <th>Năm cập nhật</th>
+                  <th>Độ tin cậy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Smith, J. et al. (2024)</strong></td>
+                  <td>Bài báo khoa học</td>
+                  <td>Tạp chí PubMed</td>
+                  <td>Thử nghiệm lâm sàng ngẫu nhiên có đối chứng (RCT)</td>
+                  <td>2024</td>
+                  <td><span class="rating-badge rating-vhigh">Rất cao (5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Lee, H. (2023)</strong></td>
+                  <td>Phân tích gộp (Meta-analysis)</td>
+                  <td>Google Scholar</td>
+                  <td>Tổng hợp số liệu từ 45 bài báo khoa học toàn cầu</td>
+                  <td>2023</td>
+                  <td><span class="rating-badge rating-vhigh">Rất cao (5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Springer Nature (2023)</strong></td>
+                  <td>Tạp chí khoa học Q1</td>
+                  <td>BMC Medical Education</td>
+                  <td>Nghiên cứu cắt ngang (Cross-sectional) có bình duyệt</td>
+                  <td>2023</td>
+                  <td><span class="rating-badge rating-high">Cao (4.5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Taylor &amp; Francis (2022)</strong></td>
+                  <td>Tạp chí khoa học Q1</td>
+                  <td>Medical Teacher</td>
+                  <td>Nghiên cứu thuần tập tiến cứu đo lường hiệu suất điểm</td>
+                  <td>2022</td>
+                  <td><span class="rating-badge rating-high">Cao (4.5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Wiley (2021)</strong></td>
+                  <td>Tạp chí khoa học Q1</td>
+                  <td>Journal of Advanced Nursing</td>
+                  <td>Đánh giá định tính qua phỏng vấn sâu cá nhân</td>
+                  <td>2021</td>
+                  <td><span class="rating-badge rating-high">Cao (4.0/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Goldstein, E. B. (2022)</strong></td>
+                  <td>Sách chuyên khảo</td>
+                  <td>Cengage Learning (Chương 4: Chú ý &amp; Trí nhớ)</td>
+                  <td>Tổng hợp lý thuyết sinh học thần kinh và nhận thức</td>
+                  <td>2022</td>
+                  <td><span class="rating-badge rating-high">Cao (4.0/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Cirillo, F. (2020)</strong></td>
+                  <td>Sách chuyên khảo</td>
+                  <td>NXB Currency (Tác giả sáng lập phương pháp)</td>
+                  <td>Mô tả chi tiết quy tắc thực hành chuẩn từ thực tiễn</td>
+                  <td>2020</td>
+                  <td><span class="rating-badge rating-med">Trung bình (3.5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>WHO (2023)</strong></td>
+                  <td>Nguồn mở internet</td>
+                  <td>Tổ chức Y tế Thế giới (Báo cáo sức khỏe tâm thần)</td>
+                  <td>Báo cáo số liệu thống kê dịch tễ chính thức toàn cầu</td>
+                  <td>2023</td>
+                  <td><span class="rating-badge rating-high">Cao (4.5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>APA (2024)</strong></td>
+                  <td>Nguồn mở internet</td>
+                  <td>Hiệp hội Tâm lý học Hoa Kỳ (Cẩm nang cày thi)</td>
+                  <td>Cẩm nang thực hành và hướng dẫn can thiệp tâm lý</td>
+                  <td>2024</td>
+                  <td><span class="rating-badge rating-high">Cao (4.5/5)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Nguyen, T. A. (2025)</strong></td>
+                  <td>Luận văn Thạc sĩ</td>
+                  <td>Thư viện ĐH Y Hà Nội (Nguồn mở rộng)</td>
+                  <td>Nghiên cứu cắt ngang khảo sát trên 400 sinh viên Việt Nam</td>
+                  <td>2025</td>
+                  <td><span class="rating-badge rating-med">Trung bình (3.5/5)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Trong khối ngành Y khoa, chất lượng nguồn tin y văn quyết định tính chính xác của các kết luận lâm sàng. Áp dụng tiêu chí A-P-M-C-U giúp em lọc bỏ các nguồn tin thiếu khoa học, ưu tiên các bài báo được bình duyệt khắt khe (Peer-reviewed) trên các tạp chí lớn, đảm bảo tính ứng dụng an toàn cho các can thiệp y tế thực tế.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w2.pdf" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Xem Báo cáo Bài 2 (.pdf)
+          </a>
+        </article>
+
+        <!-- BÀI 3 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>03</span>
+            <div>
+              <h2>Thực hành Bài 3: Kỹ năng Prompt Engineering trong Học tập Y khoa</h2>
+              <p>Ứng dụng kỹ nghệ prompt có cấu trúc theo mô hình 3C trên mô hình Google Gemini nhằm khai thác và tóm tắt kiến thức chuyên ngành hiệu quả.</p>
+            </div>
+          </div>
+
+          <div class="process-flow">
+            <div class="step-card">
+              <p><strong>Tác vụ 1: Tóm tắt giải phẫu Tam giác đùi (Femoral Triangle)</strong><br>
+              <em>Prompt nâng cao:</em> "Đóng vai giảng viên Giải phẫu. Hãy tóm tắt về Tam giác đùi cho sinh viên chuẩn bị thi chạy trạm. Yêu cầu: 1. Nêu rõ giới hạn. 2. Liệt kê thành phần từ ngoài vào trong. 3. Trình bày dạng BẢNG gồm các cột: Cấu trúc, Vị trí, Ứng dụng lâm sàng (bắt mạch, tiêm truyền)."<br>
+              <em>Hiệu quả:</em> Ép AI đưa ra cấu trúc bảng biểu trực quan, liên kết trực tiếp giải phẫu với thủ thuật lâm sàng thay vì văn bản liệt kê rườm rà.</p>
+            </div>
+            <div class="step-card">
+              <p><strong>Tác vụ 2: Giải thích cơ sinh học Đai vai (Shoulder Girdle)</strong><br>
+              <em>Prompt nâng cao:</em> "Đóng vai Bác sĩ Chỉnh hình. Hãy giải thích động lực học đai vai theo logic: Bước 1: Cấu trúc xương/khớp. Bước 2: Phân tích nghịch lý: Tại sao tầm vận động lớn lại đi kèm sự thiếu ổn định? Bước 3: Lấy ví dụ gãy xương đòn để minh chứng điểm yếu cơ học."<br>
+              <em>Hiệu quả:</em> Kỹ thuật Chain-of-Thought buộc AI suy luận logic nhân quả, giúp sinh viên hiểu rõ cơ chế chấn thương lâm sàng thay vì học vẹt.</p>
+            </div>
+            <div class="step-card">
+              <p><strong>Tác vụ 3: Tạo bộ câu hỏi MCQ Hệ tuần hoàn</strong><br>
+              <em>Prompt nâng cao:</em> "Bạn là chuyên gia khảo thí USMLE. Hãy tạo 2 câu hỏi MCQ dạng ca lâm sàng (Clinical Vignette) về hệ tuần hoàn. Yêu cầu: 1. Không hỏi kiến thức học vẹt. 2. Các đáp án nhiễu phải dễ gây nhầm lẫn. 3. Phần giải thích phải nêu rõ tại sao đáp án đúng là đúng và tại sao các đáp án còn lại sai."<br>
+              <em>Hiệu quả:</em> Thiết lập giới hạn phủ định (Negative Constraints) và bối cảnh cụ thể giúp AI loại bỏ các câu hỏi nhận biết đơn giản, tạo ra các ca bệnh lâm sàng có tính phân hóa cao.</p>
+            </div>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Mức độ chính xác học thuật của câu trả lời từ AI tỷ lệ thuận với tính cụ thể của ngữ cảnh và độ khắt khe của các giới hạn mà người viết prompt đặt ra. Mô hình 3C (Context - Constraints - Clarity) giúp định hình chính xác không gian suy luận của AI, triệt tiêu hiện tượng ảo giác thông tin chuyên ngành.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w3.pdf" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Xem Báo cáo Bài 3 (.pdf)
+          </a>
+        </article>
+
+        <!-- BÀI 4 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>04</span>
+            <div>
+              <h2>Thực hành Bài 4: Cộng tác Trực tuyến &amp; Quản lý Dự án Nhóm</h2>
+              <p>Ứng dụng các công cụ quản lý Kanban (Trello) và đồng bộ hóa đám mây (Google Drive) trong việc thực hiện dự án nhóm: "Ứng dụng AI thế hệ mới trong giáo dục và ngoại ngữ".</p>
+            </div>
+          </div>
+          
+          <div class="research-intro">
+            <h4>Vai trò cá nhân &amp; Hệ thống hóa tài nguyên số nhóm</h4>
+            <p>Trong dự án nhóm này, em đảm nhận vai trò <strong>Nội dung (Phần 2: AI trong học ngoại ngữ)</strong> kiêm <strong>Kỹ thuật &amp; Hậu kỳ (Video Editor)</strong>. Để điều hành luồng công việc nhóm mượt mà, tránh thất thoát file video dung lượng lớn và trễ deadline, em đã triển khai hệ thống quản trị chuyên nghiệp:</p>
+            <ul>
+              <li><strong>Trello (Quản lý Kanban):</strong> Tạo các thẻ nhiệm vụ chi tiết kèm nhãn màu báo động đỏ/xanh, phân bổ deadline cứng sớm 48 giờ để dự phòng hậu kỳ.</li>
+              <li><strong>Google Drive (Cấu trúc phân tầng):</strong> Thiết lập cấu trúc thư mục logic 3 cấp (nguyên liệu thô, ảnh minh chứng, bản dựng nháp) và phân quyền chặt chẽ (chỉ xem đối với ảnh minh chứng, chỉnh sửa đối với thư mục nộp file thu âm).</li>
+              <li><strong>Quy tắc đặt tên tệp tin:</strong> Thống nhất cú pháp <code>[Họ tên] - [Nội dung]</code> để quá trình import hậu kỳ trên CapCut không bị nhầm lẫn giữa các phân đoạn.</li>
+            </ul>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Sự đồng bộ hóa các công cụ số và tính kỷ luật trong việc thực thi quy trình lưu trữ là yếu tố cốt lõi của làm việc nhóm từ xa. Giải pháp "lưu trữ một cửa" trên Drive giúp giảm 90% thời gian tìm kiếm file và tránh tình trạng nén vỡ hình ảnh khi gửi qua các ứng dụng chat thông thường.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w4.pdf" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Xem Báo cáo Bài 4 (.pdf)
+          </a>
+        </article>
+
+        <!-- BÀI 5 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>05</span>
+            <div>
+              <h2>Thực hành Bài 5: Sáng tạo Nội dung số &amp; Podcast Y khoa</h2>
+              <p>Ứng dụng các công cụ AI tạo sinh (Gemini, Canva, CapCut) để thiết kế và xuất bản tập Podcast "Tâm sự mùa thi: Mẹo quản lý thời gian Pomodoro cho sinh viên y khoa".</p>
+            </div>
+          </div>
+
+          <div class="research-intro">
+            <h4>Quy trình phối hợp 3 công cụ AI sáng tạo nội dung</h4>
+            <p>Tận dụng tối đa ưu thế của các AI chuyên biệt để tối ưu hóa hiệu suất sáng tạo nội dung số:</p>
+            <ul>
+              <li><strong>Google Gemini (Ý tưởng &amp; Kịch bản):</strong> Dùng prompt đóng vai Mentor viết kịch bản podcast thời lượng 3 phút, đưa ra các ví dụ cụ thể về việc ôn thi Giải phẫu và trực lâm sàng. Em đã trực tiếp viết lại 60% nội dung để tích hợp lý thuyết từ giáo trình "Tâm lý học y học".</li>
+              <li><strong>Canva AI (Hình ảnh &amp; Slide):</strong> Thiết kế slide nhận diện thương hiệu Podcast theo bảng màu pastel trung tính (xanh mint, kem sữa) giúp giảm áp lực thị giác, thay thế các icon mặc định bằng biểu tượng ống nghe và đồng hồ Pomodoro chuẩn xác.</li>
+              <li><strong>CapCut AI (Hậu kỳ âm thanh):</strong> Ứng dụng công cụ lọc nhiễu tự động (Noise reduction) và tạo phụ đề tự động (Auto captions). Em trực tiếp thực hiện phần thu âm bằng giọng đọc thật và tinh chỉnh nhạc nền lofi nhẹ nhàng để tăng tính truyền cảm.</li>
+            </ul>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Sự kết hợp giữa các AI chuyên biệt giúp tự động hóa 80% các khâu kỹ thuật thủ công rườm rà. Tuy nhiên, yếu tố con người (thu âm giọng nói thật, kiểm duyệt y lý khoa học) mới là linh hồn tạo nên sự kết nối đồng cảm và tính chân thực của sản phẩm truyền thông sức khỏe.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w5.docx" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Tải Báo cáo Bài 5 (.docx)
+          </a>
+        </article>
+
+        <!-- BÀI 6 -->
+        <article class="task-card">
+          <div class="task-head">
+            <span>06</span>
+            <div>
+              <h2>Thực hành Bài 6: Sử dụng AI có Trách nhiệm &amp; Đạo đức Học thuật</h2>
+              <p>Nghiên cứu so sánh chính sách quản lý AI học đường giữa ĐHQGHN và RMIT Việt Nam; thiết lập bộ nguyên tắc đạo đức AI cá nhân trong học tập y sinh.</p>
+            </div>
+          </div>
+
+          <div class="research-intro">
+            <h4>Nghiên cứu so sánh chính sách &amp; Thực hành minh bạch</h4>
+            <p>Phân tích so sánh chính sách sử dụng AI giữa hai đơn vị đào tạo đại học cho thấy hướng tiếp cận chuyển dịch số cởi mở:</p>
+            <ul>
+              <li><strong>Chính sách ĐHQGHN:</strong> Tiếp cận theo hướng nâng cao năng lực số chủ động, đưa môn VNU1001 vào giảng dạy bắt buộc, nghiêm cấm đạo văn sản phẩm AI và yêu cầu trích dẫn minh bạch.</li>
+              <li><strong>Chính sách Đại học RMIT:</strong> Phân chia cực kỳ chi tiết 3 cấp độ sử dụng AI (Được phép, Hạn chế, Cấm hoàn toàn) cho từng đầu điểm cụ thể, bắt buộc nộp kèm bản cam đoan sử dụng AI (AI Disclosure).</li>
+            </ul>
+          </div>
+
+          <div class="section-subtitle">
+            <span class="subtitle-icon">💡</span>
+            <h4>Bài học kinh nghiệm rút ra</h4>
+            <p style="margin-left: 10px; font-size: 0.85rem; color: var(--text-secondary);">Đối với sinh viên ngành Y, đạo đức học thuật không chỉ là tính trung thực của điểm số, mà là trách nhiệm trực tiếp với an toàn sinh mạng của người bệnh sau này. Lạm dụng AI tạo sinh dễ dẫn đến hiện tượng teo cơ nhận thức (Cognitive Atrophy), suy giảm năng lực chẩn đoán độc lập lâm sàng.</p>
+          </div>
+
+          <a class="action-btn" href="docs/w6.pdf" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Xem Báo cáo Bài 6 (.pdf)
+          </a>
+        </article>
+
+      </section>
+
+      <!-- ==================== TAB 3: REFLECTION ==================== -->
+      <section class="section" id="reflection">
+        <div class="glass-reflection-card">
+          <div class="glass-icon">💊</div>
+          <div class="glass-content">
+            <h3 class="glass-card-title">Mối giao thoa giữa Y học lâm sàng &amp; Công nghệ số</h3>
+            <p>Kiến thức Y khoa là một kho tàng khổng lồ và không ngừng biến đổi hàng ngày với hàng ngàn nghiên cứu lâm sàng mới xuất bản. Việc tiếp cận phương pháp học tập truyền thống (chỉ dựa vào đọc thuộc lòng và ghi nhớ thụ động) không còn đủ để sinh viên Y khoa đáp ứng được sự phát triển thần tốc của thời đại.</p>
+            <p>Học phần Nhập môn Công nghệ số và AI giúp em định hình lại hoàn toàn phương pháp học tập: chuyển từ thế bị động sang chủ động tương tác với công nghệ. AI đóng vai trò như một trợ giảng thông minh hỗ trợ hệ thống hóa giải phẫu, giải thích các cơ chế sinh lý bệnh dưới nhiều góc độ và mô phỏng các bộ câu hỏi chạy trạm thực tế. Điều cốt lõi là người học phải giữ vững vai trò làm chủ, biết cách hoài nghi khoa học và liên tục kiểm chứng chéo thông tin với y văn thực chứng chuẩn quốc gia.</p>
+          </div>
+        </div>
+
+        <div class="glass-reflection-card">
+          <div class="glass-icon">⚖️</div>
+          <div class="glass-content">
+            <h3 class="glass-card-title">Phân tích chính sách học thuật về AI học đường</h3>
+            <p>So sánh chính sách sử dụng AI giữa hai môi trường giáo dục lớn phản ánh triết lý đào tạo số hiện đại:</p>
+            <div class="policy-comparison-cards">
+              <div class="policy-box">
+                <div class="policy-box-title fpt">Chính sách ĐHQGHN</div>
+                <p class="policy-box-txt">Khuyến khích sinh viên nâng cao năng lực số chủ động thông qua việc tích hợp AI vào học phần bắt buộc VNU1001. Đề cao đạo đức liêm chính học thuật, nghiêm cấm hành vi nộp sản phẩm của AI làm bài làm cá nhân mà không khai báo.</p>
+              </div>
+              <div class="policy-box">
+                <div class="policy-box-title bk">Chính sách ĐH RMIT</div>
+                <p class="policy-box-txt">Phân nhóm rõ rệt các mức độ cho phép sử dụng AI theo từng bài đánh giá năng lực học tập cụ thể, kiểm soát chặt chẽ thông qua bản cam đoan khai báo sử dụng AI (AI Disclosure Form) chi tiết.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-reflection-card">
+          <div class="glass-icon">🛡️</div>
+          <div class="glass-content">
+            <h3 class="glass-card-title">Ranh giới đạo đức &amp; Nguy cơ teo cơ nhận thức</h3>
+            <p>Sự nguy hiểm lớn nhất khi lạm dụng AI tạo sinh trong giáo dục y khoa là hội chứng <strong>Teo cơ nhận thức (Cognitive Atrophy)</strong>. Nếu sinh viên phó thác toàn bộ việc lập luận cơ chế bệnh sinh, chẩn đoán phân biệt hay tóm tắt y văn cho AI, họ sẽ mất đi khả năng lập luận lâm sàng độc lập — kỹ năng sống còn giúp bác sĩ đưa ra quyết định điều trị chính xác khi đối mặt trực tiếp với tính mạng người bệnh trong phòng cấp cứu.</p>
+            
+            <div class="allowed-vs-forbidden">
+              <div class="behavior-box check">
+                <div class="behavior-badge allowed">HỖ TRỢ HỢP LÝ</div>
+                <ul>
+                  <li>Hệ thống hóa cấu trúc giải phẫu dưới dạng bảng biểu so sánh nhanh.</li>
+                  <li>Lên ý tưởng, dàn ý sơ bộ cho kịch bản truyền thông sức khỏe.</li>
+                  <li>Tìm kiếm nhanh từ khóa nghiên cứu để đối chiếu y văn.</li>
+                </ul>
+              </div>
+              <div class="behavior-box cross">
+                <div class="behavior-badge forbidden">GIAN LẬN HỌC THUẬT</div>
+                <ul>
+                  <li>Sao chép nguyên văn kịch bản/văn bản do AI tạo ra để nộp báo cáo.</li>
+                  <li>Sử dụng các trích dẫn tài liệu giả mạo do ảo giác AI sinh ra mà không kiểm chứng.</li>
+                  <li>Che giấu và không khai báo minh bạch sự hỗ trợ của AI trong bài viết khoa học.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 4: SKILLS ==================== -->
+      <section class="section" id="skills">
+        <div class="skills-block-detail">
+          <h3 class="skills-block-title">1. Kỹ năng Prompt Engineering - Bộ nguyên tắc "3C"</h3>
+          <p class="skills-block-intro">Tối ưu hóa chất lượng đầu ra của các mô hình ngôn ngữ lớn (LLMs) bằng cách áp dụng bộ nguyên tắc "3C" do em đúc kết:</p>
+          
+          <div class="create-structure">
+            <div class="create-node">
+              <div class="node-letter">C</div>
+              <div class="node-content">
+                <strong>Context (Bối cảnh &amp; Vai trò)</strong>
+                <span>Gán vai trò chuyên gia cụ thể (ví dụ: giảng viên giải phẫu, chuyên gia khảo thí USMLE) để kích hoạt không gian từ vựng chuyên ngành y sinh chuẩn xác.</span>
+              </div>
+            </div>
+            <div class="create-node">
+              <div class="node-letter">C</div>
+              <div class="node-content">
+                <strong>Constraints (Giới hạn logic)</strong>
+                <span>Thiết lập luồng suy luận từng bước (Chain-of-Thought) và sử dụng các câu lệnh phủ định (Negative Constraints) để chặn rác thông tin và hạn chế tối đa ảo giác.</span>
+              </div>
+            </div>
+            <div class="create-node">
+              <div class="node-letter">C</div>
+              <div class="node-content">
+                <strong>Clarity (Cấu trúc đầu ra)</strong>
+                <span>Yêu cầu rõ ràng về mặt hiển thị (bảng biểu, sơ đồ cây, đánh dấu từ khóa cốt lõi) giúp thông tin được hệ thống hóa trực quan, dễ ghi nhớ.</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="skills-table-title">Bảng đối sánh hiệu quả các cấp độ Prompt trên 3 tác vụ học tập y khoa</h4>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tác vụ</th>
+                  <th>Cấp độ Prompt</th>
+                  <th>Nội dung Prompt</th>
+                  <th>Hiệu quả thực tế</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3" class="task-cell">Tác vụ 1:<br>Tóm tắt giải phẫu<br>(Tam giác đùi)</td>
+                  <td>Cơ bản</td>
+                  <td><code>Tóm tắt về tam giác đùi.</code></td>
+                  <td class="eval-cell">Kết quả trả về dạng văn bản thô, liệt kê chung chung, rất khó hình dung thứ tự không gian của các cấu trúc mạch máu thần kinh.</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Tóm tắt giới hạn và thành phần tam giác đùi dưới dạng gạch đầu dòng.</code></td>
+                  <td class="eval-cell">Rõ ràng hơn, phân biệt được các mốc giới hạn nhưng vẫn mang tính lý thuyết thuần túy, chưa có ứng dụng lâm sàng thực hành.</td>
+                </tr>
+                <tr>
+                  <td class="adv-text">Nâng cao</td>
+                  <td><code>Đóng vai giảng viên Giải phẫu. Hãy tóm tắt về “Tam giác đùi” cho sinh viên chuẩn bị thi chạy trạm. Yêu cầu: 1. Nêu rõ giới hạn. 2. Liệt kê thành phần từ ngoài vào trong. 3. Trình bày dạng BẢNG gồm các cột: Cấu trúc, Vị trí, Ứng dụng lâm sàng (bắt mạch, tiêm truyền).</code></td>
+                  <td class="eval-cell text-rose">Xuất sắc: Thông tin được hệ thống hóa dạng bảng trực quan, liên kết trực tiếp giải phẫu định khu với thủ thuật tiêm truyền, bắt mạch đùi thực tế.</td>
+                </tr>
+                
+                <tr>
+                  <td rowspan="3" class="task-cell">Tác vụ 2:<br>Giải thích cơ sinh học<br>(Khớp đai vai)</td>
+                  <td>Cơ bản</td>
+                  <td><code>Giải thích về xương đai vai.</code></td>
+                  <td class="eval-cell">Chỉ liệt kê tên các xương cấu thành một cách máy móc, giống định nghĩa sách giáo khoa phổ thông.</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Giải thích cấu trúc xương đai vai và chức năng vận động của nó.</code></td>
+                  <td class="eval-cell">Mô tả được chức năng vận động tổng quát nhưng chưa làm rõ được mối quan hệ cơ học và tính dễ tổn thương của khớp.</td>
+                </tr>
+                <tr>
+                  <td class="adv-text">Nâng cao</td>
+                  <td><code>Đóng vai Bác sĩ Chỉnh hình. Hãy giải thích động lực học đai vai theo logic: Bước 1: Cấu trúc xương/khớp. Bước 2: Phân tích nghịch lý: Tại sao tầm vận động lớn lại đi kèm sự thiếu ổn định? Bước 3: Lấy ví dụ gãy xương đòn để minh chứng điểm yếu cơ học.</code></td>
+                  <td class="eval-cell text-rose">Rất tốt: Sử dụng chuỗi lập luận logic giúp sinh viên hiểu rõ tại sao khớp vai có tầm vận động lớn nhất cơ thể nhưng lại là nơi dễ trật khớp nhất.</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="3" class="task-cell">Tác vụ 3:<br>Tạo câu hỏi MCQ<br>(Hệ tuần hoàn)</td>
+                  <td>Cơ bản</td>
+                  <td><code>Tạo 3 câu hỏi trắc nghiệm về hệ tuần hoàn.</code></td>
+                  <td class="eval-cell">Câu hỏi quá đơn giản, kiểm tra trí nhớ ngắn hạn về định nghĩa số ngăn tim, không có giá trị ôn thi y khoa đại học.</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Tạo 3 câu MCQ về sinh lý tuần hoàn, có đáp án và giải thích.</code></td>
+                  <td class="eval-cell">Câu hỏi có độ khó cao hơn nhưng vẫn thuần lý thuyết học thuộc lòng, các đáp án nhiễu dễ loại trừ nhanh.</td>
+                </tr>
+                <tr>
+                  <td class="adv-text">Nâng cao</td>
+                  <td><code>Bạn là chuyên gia khảo thí USMLE. Hãy tạo 2 câu hỏi MCQ dạng ca lâm sàng (Clinical Vignette) về hệ tuần hoàn. Yêu cầu: 1. Không hỏi kiến thức học vẹt. 2. Các đáp án nhiễu phải dễ gây nhầm lẫn. 3. Phần giải thích phải nêu rõ tại sao đáp án đúng là đúng và tại sao các đáp án còn lại sai.</code></td>
+                  <td class="eval-cell text-rose">Xuất sắc: Tạo ra tình huống lâm sàng thực tế, đòi hỏi tư duy phân tích triệu chứng để chẩn đoán phân biệt, lời giải chi tiết giúp tự học sâu.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="skills-block-detail">
+          <h3 class="skills-block-title">2. Nghiên cứu tài liệu học thuật theo tiêu chí A-P-M-C-U</h3>
+          <p class="skills-block-intro">Bảng đối chiếu và đánh giá chất lượng nguồn thông tin học thuật phục vụ nghiên cứu đề tài "Kỹ thuật Pomodoro giảm thiểu hội chứng Burnout ở sinh viên y khoa":</p>
+          
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tài liệu tham khảo (Harvard style)</th>
+                  <th>Tác giả (A)</th>
+                  <th>NXB/Tạp chí (P)</th>
+                  <th>Phương pháp (M)</th>
+                  <th>Trích dẫn (C)</th>
+                  <th>Cập nhật (U)</th>
+                  <th>Xếp hạng chung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Smith, J. et al. (2024). Hiệu quả Pomodoro lên stress sinh viên Y khoa năm 3.</strong></td>
+                  <td>Nhóm nghiên cứu ĐH Johns Hopkins</td>
+                  <td>Tạp chí PubMed (Bình duyệt)</td>
+                  <td>Thử nghiệm lâm sàng ngẫu nhiên có đối chứng (RCT)</td>
+                  <td>Chưa thống kê</td>
+                  <td>2024 (Rất mới)</td>
+                  <td><span class="p-badge p-laser">Xuất sắc</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Lee, H. (2023). Tỷ lệ hiện mắc hội chứng Burnout ở sinh viên khối sức khỏe: Phân tích gộp.</strong></td>
+                  <td>Chuyên gia dịch tễ học uy tín</td>
+                  <td>Google Scholar (Bình duyệt)</td>
+                  <td>Phân tích gộp (Meta-analysis) từ 45 bài báo</td>
+                  <td>215 lần</td>
+                  <td>2023 (Mới)</td>
+                  <td><span class="p-badge p-laser">Xuất sắc</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Chen, Y. (2023). Quản lý thời gian và kiệt sức học thuật. BMC Medical Education.</strong></td>
+                  <td>Nhóm tác giả đại học y khoa</td>
+                  <td>Springer Nature (Tạp chí Q1)</td>
+                  <td>Nghiên cứu cắt ngang trên diện rộng bằng SPSS</td>
+                  <td>34 lần</td>
+                  <td>2023 (Mới)</td>
+                  <td><span class="p-badge p-laser">Rất cao</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Davis, R. (2022). Tác động của Spaced Learning đến kết quả thi nội trú. Medical Teacher.</strong></td>
+                  <td>Chuyên gia giáo dục y khoa</td>
+                  <td>Taylor &amp; Francis (Tạp chí Q1)</td>
+                  <td>Nghiên cứu thuần tập tiến cứu</td>
+                  <td>180 lần</td>
+                  <td>2022 (Cập nhật)</td>
+                  <td><span class="p-badge p-laser">Rất cao</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Goldstein, E. B. (2022). Tâm lý học Nhận thức: Lý thuyết và Ứng dụng.</strong></td>
+                  <td>Giáo sư đại học uy tín</td>
+                  <td>Cengage Learning (Chuyên khoa)</td>
+                  <td>Tổng hợp hệ thống lý thuyết nền tảng</td>
+                  <td>Rất nhiều</td>
+                  <td>2022 (Cập nhật)</td>
+                  <td><span class="p-badge p-cyan">Cao</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 5: TỔNG KẾT ==================== -->
+      <section class="section" id="conclusion">
+        <div class="conclusion-flow">
+          <div class="conclusion-main-card">
+            <h3 class="panel-section-title">Nhận thức số &amp; Cam kết liêm chính</h3>
+            <p class="conclusion-txt">
+              Học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo đã giúp em xây dựng một nền móng vững chắc về <strong>tư duy số chuyên nghiệp</strong>. Việc học cách quản trị tệp tin khoa học, thiết lập môi trường làm việc Kanban đồng bộ và khai thác AI có trách nhiệm không chỉ nâng cao hiệu suất học tập hiện tại, mà còn là hành trang không thể thiếu của một người bác sĩ hiện đại.
+            </p>
+            <p class="conclusion-txt">
+              Là một sinh viên ngành <strong>Y khoa</strong>, em hiểu rõ rằng tính chính xác của dữ liệu y tế liên quan mật thiết đến sức khỏe và tính mạng con người. Em cam kết sẽ luôn tuân thủ bộ quy tắc đạo đức AI cá nhân: coi AI là công cụ hỗ trợ tư duy chứ không phải đích đến, luôn xác thực chéo mọi thông tin trước khi áp dụng lâm sàng, và duy trì tuyệt đối liêm chính khoa học để xứng đáng là người thầy thuốc có chuyên môn vững vàng và đạo đức trong sạch.
+            </p>
+          </div>
+          
+          <div class="quote-banner">
+            <div class="quote-symbol">“</div>
+            <blockquote class="quote-body">
+              Công nghệ số và AI là đôi cánh giúp người thầy thuốc tiếp cận nhanh chóng với kho tàng tri thức y học nhân loại, nhưng trái tim thấu cảm lâm sàng và y đức liêm chính mới là kim chỉ nam bảo vệ sức khỏe và tính mạng của người bệnh.
+            </blockquote>
+            <div class="quote-author">— Bùi Thị Huyền Linh</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
