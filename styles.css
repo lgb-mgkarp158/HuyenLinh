@@ -4,55 +4,64 @@
    Trường Đại học Y Dược - ĐHQGHN
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  /* Forest Sage & Coral Cream Color Palette */
-  --primary:         #0e5f59;   /* Forest Sage Green */
-  --primary-dim:     #0a4641;   /* Deep Sage */
-  --primary-glow:    rgba(14, 95, 89, 0.08);
+  /* Vintage Editorial Green & Pink Pastel Color Palette */
+  --primary:         #343b2f;   /* Deep Moss Green */
+  --primary-dim:     #252b22;   /* Even Darker Moss Green */
+  --primary-glow:    rgba(52, 59, 47, 0.08);
   
-  --accent:          #e07a5f;   /* Coral Cream / Coral Orange */
-  --accent-dim:      #c25f46;   /* Deep Coral */
-  --accent-glow:     rgba(224, 122, 95, 0.08);
+  --accent:          #e1b7b4;   /* Dusty Mauve Pink */
+  --accent-dim:      #bd8d8a;   /* Deep Vintage Rose */
+  --accent-glow:     rgba(225, 183, 180, 0.08);
 
-  --green:           #2a9d8f;   /* Emerald Green */
-  --orange:          #f4a261;   /* Warm Amber */
-  --red:             #e76f51;   /* Terra Cotta Red */
+  --green:           #52604d;   /* Muted Sage Green */
+  --orange:          #caa195;   /* Soft Terracotta */
+  --red:             #c27a7a;   /* Dusty Pastel Red */
   
-  /* Background System (Bright Warm Cream) */
-  --bg-base:         #faf8f5;   /* Warm Cream White */
-  --bg-surface:      #ffffff;   /* Pure White Card */
-  --bg-elevated:     #f4f1ea;   /* Warm Light Beige Card */
-  --bg-border:       rgba(14, 95, 89, 0.12);
+  /* Background System */
+  --bg-base:         #e8ded1;   /* Warm Kraft Paper / Raw Beige */
+  --bg-surface:      #e1b7b4;   /* Dusty Mauve Pink Card */
+  --bg-elevated:     #343b2f;   /* Deep Moss Green for Dark Blocks */
+  --bg-border:       #343b2f;   /* Deep Moss Green Border */
   
-  --sidebar-bg:      #ffffff;   /* Clean White Sidebar */
-  --sidebar-border:  rgba(14, 95, 89, 0.08);
+  --sidebar-bg:      #343b2f;   /* Deep Moss Green Sidebar */
+  --sidebar-border:  #343b2f;
   
   /* Text System */
-  --text-primary:    #1e293b;   /* Slate 800 */
-  --text-secondary:  #475569;   /* Slate 600 */
-  --text-muted:      #64748b;   /* Slate 500 */
-  --text-code:       #0e5f59;   
+  --text-primary:    #343b2f;   /* Deep Moss Green Text */
+  --text-secondary:  #485043;   /* Secondary Dark Green Text */
+  --text-muted:      #6c7567;   /* Muted Green Text */
+  --text-code:       #343b2f;   
+  
+  /* Sidebar Specific Text Colors (Light Cream on Dark Green) */
+  --sidebar-text-primary:   #fbf6f0;
+  --sidebar-text-secondary: #e8ded1;
+  --sidebar-text-muted:     #a6b0a2;
   
   /* Ratings colors for tables */
-  --rating-vhigh-bg: rgba(42, 157, 143, 0.12);  --rating-vhigh-c: #264653;
-  --rating-high-bg:  rgba(14, 95, 89, 0.08);    --rating-high-c:  #0e5f59;
-  --rating-med-bg:   rgba(244, 162, 97, 0.12);   --rating-med-c:   #e76f51;
-  --rating-low-bg:   rgba(231, 111, 81, 0.12);   --rating-low-c:   #e76f51;
+  --rating-vhigh-bg: rgba(52, 59, 47, 0.15);  --rating-vhigh-c: #fbf6f0;
+  --rating-high-bg:  rgba(82, 96, 77, 0.12);   --rating-high-c:  #343b2f;
+  --rating-med-bg:   rgba(225, 183, 180, 0.25);  --rating-med-c:   #343b2f;
+  --rating-low-bg:   rgba(194, 122, 122, 0.25);  --rating-low-c:   #343b2f;
+  
+  /* Typography */
+  --font-serif:      'Playfair Display', Georgia, serif;
+  --font-mono:       'JetBrains Mono', Courier New, monospace;
   
   /* Layout constraints */
   --sidebar-w: 320px;
   --navbar-h: 70px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
+  --radius-sm: 4px;             /* Muted rounding for a more raw paper/stamped feel */
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
   
   /* Elevation Shadows */
-  --shadow-sm:   0 1px 3px rgba(0,0,0,0.02);
-  --shadow-card: 0 4px 24px rgba(14, 95, 89, 0.04);
-  --shadow-lg:   0 12px 36px rgba(14, 95, 89, 0.08);
+  --shadow-sm:   0 1px 2px rgba(52,59,47,0.05);
+  --shadow-card: 0 4px 18px rgba(52, 59, 47, 0.06);
+  --shadow-lg:   0 10px 28px rgba(52, 59, 47, 0.1);
   
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --dur:  0.25s;
@@ -77,8 +86,8 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(rgba(14, 95, 89, 0.06) 1.5px, transparent 1.5px);
-  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(52, 59, 47, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
   pointer-events: none;
   z-index: -1;
 }
@@ -92,7 +101,7 @@ body::before {
     background: var(--bg-base);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(14, 95, 89, 0.15);
+    background: rgba(82, 121, 111, 0.15);
     border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -134,14 +143,14 @@ body::before {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-weight: 800;
   font-size: 0.95rem;
   letter-spacing: 0.05em;
-  box-shadow: 0 4px 10px rgba(14, 95, 89, 0.2);
+  box-shadow: 0 4px 10px rgba(82, 121, 111, 0.2);
 }
 .nav-brand h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--primary);
@@ -166,13 +175,13 @@ body::before {
   border: 1px solid transparent;
 }
 .nav-item:hover {
-  background: rgba(14, 95, 89, 0.05);
+  background: rgba(82, 121, 111, 0.05);
   color: var(--primary);
 }
 .nav-item.active {
   background: var(--primary);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(14, 95, 89, 0.2);
+  box-shadow: 0 4px 14px rgba(82, 121, 111, 0.2);
 }
 
 /* ==========================================================================
@@ -196,55 +205,56 @@ body::before {
 .profile-sticky-card {
   position: sticky;
   top: calc(var(--navbar-h) + 36px);
-  background: var(--bg-surface);
-  border: 1px solid var(--bg-border);
+  background: var(--sidebar-bg);
+  border: 1px solid var(--sidebar-border);
   border-radius: var(--radius-xl);
   padding: 36px 28px;
   box-shadow: var(--shadow-card);
   text-align: center;
+  color: var(--sidebar-text-secondary);
 }
 .profile-sticky-card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: linear-gradient(90deg, var(--accent), var(--primary));
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 /* Profile Photo */
 .avatar-container {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 140px;
   margin: 0 auto 20px;
-  border-radius: 50%;
+  border-radius: 110px / 140px; /* Vertical Oval */
   padding: 3px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  box-shadow: 0 4px 15px rgba(14, 95, 89, 0.1);
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .profile-avatar {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 110px / 140px; /* Vertical Oval */
   object-fit: cover;
   background-color: var(--bg-elevated);
-  border: 3px solid #ffffff;
+  border: 2px solid var(--accent);
   z-index: 2;
   position: relative;
 }
 
 .profile-sticky-card h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--sidebar-text-primary);
   letter-spacing: -0.02em;
   margin-bottom: 4px;
 }
 .student-id {
   font-family: var(--font-mono);
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: var(--sidebar-text-muted);
   font-weight: 500;
   margin-bottom: 18px;
 }
@@ -258,27 +268,27 @@ body::before {
 .profile-badge {
   display: inline-block;
   padding: 6px 14px;
-  border-radius: 50px;
+  border-radius: var(--radius-sm);
   font-size: 0.76rem;
   font-weight: 600;
   line-height: 1.3;
 }
 .major-badge {
-  background: rgba(14, 95, 89, 0.06);
-  color: var(--primary);
-  border: 1px solid rgba(14, 95, 89, 0.15);
+  background: rgba(251, 246, 240, 0.1);
+  color: var(--sidebar-text-primary);
+  border: 1px solid rgba(251, 246, 240, 0.25);
 }
 .institution-badge {
-  background: rgba(224, 122, 95, 0.05);
-  color: #c25f46;
-  border: 1px solid rgba(224, 122, 95, 0.12);
+  background: rgba(229, 193, 190, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(229, 193, 190, 0.3);
 }
 
 .profile-card-footer {
-  border-top: 1px solid var(--bg-border);
+  border-top: 1px solid rgba(251, 246, 240, 0.15);
   padding-top: 18px;
   font-size: 0.78rem;
-  color: var(--text-secondary);
+  color: var(--sidebar-text-secondary);
 }
 .profile-card-status {
   display: flex;
@@ -357,7 +367,7 @@ body::before {
 }
 
 .hero-card h1 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 2.25rem;
   font-weight: 900;
   color: var(--primary);
@@ -400,7 +410,7 @@ body::before {
   margin-bottom: 12px;
 }
 .intro-box h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-weight: 800;
   color: var(--primary);
   font-size: 0.98rem;
@@ -441,7 +451,7 @@ body::before {
   justify-content: center;
 }
 .about-me-header h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.2rem;
   font-weight: 800;
   color: var(--primary);
@@ -453,7 +463,7 @@ body::before {
 }
 
 .learning-objective-box {
-  background: rgba(14, 95, 89, 0.02);
+  background: rgba(82, 121, 111, 0.02);
   border-left: 3px solid var(--primary);
   padding: 20px;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
@@ -495,12 +505,12 @@ body::before {
   border-radius: 4px;
   margin-bottom: 12px;
 }
-.tag-coral { background: rgba(224,122,95,0.08); color: var(--accent); }
-.tag-sage { background: rgba(14,95,89,0.08); color: var(--primary); }
-.tag-emerald { background: rgba(42,157,143,0.08); color: var(--green); }
+.tag-coral { background: rgba(212, 165, 165, 0.08); color: var(--accent); }
+.tag-sage { background: rgba(82, 121, 111, 0.08); color: var(--primary); }
+.tag-emerald { background: rgba(132, 165, 157, 0.08); color: var(--green); }
 
 .about-me-card h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -532,7 +542,7 @@ body::before {
   margin-bottom: 24px;
 }
 .task-head > span {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-weight: 900;
   font-size: 2.25rem;
   color: var(--accent-dim);
@@ -540,7 +550,7 @@ body::before {
   line-height: 1;
 }
 .task-head h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--primary);
@@ -560,7 +570,7 @@ body::before {
 }
 .subtitle-icon { font-size: 1.15rem; }
 .section-subtitle h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--primary);
@@ -585,7 +595,7 @@ body::before {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--accent-dim);
-  background: rgba(224,122,95,0.06);
+  background: rgba(212, 165, 165, 0.06);
   width: 24px; height: 24px;
   border-radius: 50%;
   display: flex;
@@ -601,7 +611,7 @@ body::before {
 .step-card code {
   font-family: var(--font-mono);
   font-size: 0.76rem;
-  background: rgba(14,95,89,0.05);
+  background: rgba(82, 121, 111, 0.05);
   color: var(--primary);
   padding: 1px 4px;
   border-radius: 4px;
@@ -647,14 +657,14 @@ body::before {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
-  box-shadow: 0 4px 10px rgba(14, 95, 89, 0.15);
+  box-shadow: 0 4px 10px rgba(82, 121, 111, 0.15);
   transition: all var(--dur) var(--ease);
   margin-top: 18px;
   border: 1px solid transparent;
 }
 .action-btn:hover {
   background: var(--primary-dim);
-  box-shadow: 0 6px 15px rgba(14, 95, 89, 0.25);
+  box-shadow: 0 6px 15px rgba(82, 121, 111, 0.25);
   transform: translateY(-2px);
 }
 .btn-icon {
@@ -666,7 +676,7 @@ body::before {
   margin-bottom: 24px;
 }
 .research-intro h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -777,7 +787,7 @@ td strong { color: var(--text-primary); }
 }
 .glass-content { flex: 1; }
 .glass-card-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--primary);
@@ -805,7 +815,7 @@ td strong { color: var(--text-primary); }
   padding: 20px;
 }
 .policy-box-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.88rem;
   font-weight: 800;
   margin-bottom: 8px;
@@ -831,12 +841,12 @@ td strong { color: var(--text-primary); }
   padding: 24px;
 }
 .behavior-box.check {
-  background: rgba(42, 157, 143, 0.02);
-  border-color: rgba(42, 157, 143, 0.15);
+  background: rgba(132, 165, 157, 0.02);
+  border-color: rgba(132, 165, 157, 0.15);
 }
 .behavior-box.cross {
-  background: rgba(224, 122, 95, 0.02);
-  border-color: rgba(224, 122, 95, 0.15);
+  background: rgba(212, 165, 165, 0.02);
+  border-color: rgba(212, 165, 165, 0.15);
 }
 .behavior-badge {
   display: inline-block;
@@ -848,11 +858,11 @@ td strong { color: var(--text-primary); }
   margin-bottom: 16px;
 }
 .behavior-badge.allowed {
-  background: rgba(42, 157, 143, 0.12);
-  color: #264653;
+  background: rgba(132, 165, 157, 0.12);
+  color: #354f52;
 }
 .behavior-badge.forbidden {
-  background: rgba(224, 122, 95, 0.12);
+  background: rgba(212, 165, 165, 0.12);
   color: var(--accent-dim);
 }
 .behavior-box ul {
@@ -896,7 +906,7 @@ td strong { color: var(--text-primary); }
   margin-bottom: 36px;
 }
 .skills-block-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--primary);
@@ -936,7 +946,7 @@ td strong { color: var(--text-primary); }
 }
 .node-content { display: flex; flex-direction: column; gap: 4px; }
 .node-content strong {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.9rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -949,7 +959,7 @@ td strong { color: var(--text-primary); }
 }
 
 .skills-table-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.98rem;
   font-weight: 800;
   color: var(--primary);
@@ -964,7 +974,7 @@ td strong { color: var(--text-primary); }
 .task-cell {
   font-weight: 700;
   color: var(--primary);
-  background: rgba(14,95,89,0.01);
+  background: rgba(82, 121, 111, 0.01);
 }
 .code-block {
   font-family: var(--font-mono);
@@ -1000,7 +1010,7 @@ td strong { color: var(--text-primary); }
   font-size: 0.68rem;
   font-weight: 700;
 }
-.p-badge.p-laser { background: var(--primary-glow); color: var(--primary); border: 1px solid rgba(14,95,89,0.15); }
+.p-badge.p-laser { background: var(--primary-glow); color: var(--primary); border: 1px solid rgba(82,121,111,0.15); }
 .p-badge.p-cyan { background: var(--bg-elevated); color: var(--text-muted); border: 1px solid var(--bg-border); }
 
 /* ==========================================================================
@@ -1019,7 +1029,7 @@ td strong { color: var(--text-primary); }
   box-shadow: var(--shadow-card);
 }
 .panel-section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--primary);
@@ -1037,7 +1047,7 @@ td strong { color: var(--text-primary); }
 .conclusion-txt:last-child { margin-bottom: 0; }
 
 .quote-banner {
-  background: linear-gradient(135deg, rgba(14, 95, 89, 0.05), rgba(224, 122, 95, 0.03));
+  background: linear-gradient(135deg, rgba(82, 121, 111, 0.05), rgba(212, 165, 165, 0.03));
   border: 1px solid var(--bg-border);
   border-radius: var(--radius-xl);
   padding: 48px;
@@ -1047,8 +1057,8 @@ td strong { color: var(--text-primary); }
 }
 .quote-symbol {
   font-size: 6rem;
-  color: rgba(14, 95, 89, 0.06);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: rgba(82, 121, 111, 0.06);
+  font-family: var(--font-serif);
   position: absolute;
   top: -10px; left: 30px;
   line-height: 1;
@@ -1064,7 +1074,7 @@ td strong { color: var(--text-primary); }
   font-style: italic;
 }
 .quote-author {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-serif);
   font-size: 0.9rem;
   font-weight: 800;
   color: var(--primary);
